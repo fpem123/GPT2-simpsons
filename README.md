@@ -28,6 +28,9 @@ Model download: [Google drive](https://drive.google.com/file/d/1-HyiwDHft1eSQudl
     text: The base of script.
     length: The size of generated text.
 
+### Image reference
+
+    static/README.md
 
 ## * With CLI *
 
