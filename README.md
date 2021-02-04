@@ -1,8 +1,8 @@
-# GPT2 My little pony
+# GPT2 Simpsons
 
 [![Run on Ainize](https://ainize.ai/images/run_on_ainize_button.svg)](https://ainize.web.app/redirect?git_repo=https://github.com/fpem123/GPT2-simpsons)
 
-This project generate The simpsons script using GPT-2 model.
+This project generate The Simpsons script using GPT-2 model.
 
 Fine tuning data: [Kaggle](https://www.kaggle.com/feniksm/simpsons?select=script_lines.csv)
 
@@ -17,7 +17,7 @@ Model download: [Google drive](https://drive.google.com/file/d/1-HyiwDHft1eSQudl
 
 ### How to use
 
-    * First, Choose the simpsons character name.
+    * First, Choose The Simpsons character name.
     * Second, Fill what the character will say in text. This will be base of script.
     * And then, Fill number in length. Text is created as long as "length". I recommend between 100 and 300.
     * If length is so big, generate time will be long.
@@ -31,7 +31,7 @@ Model download: [Google drive](https://drive.google.com/file/d/1-HyiwDHft1eSQudl
 
 ## * With CLI *
 
-
+    curl -X POST "https://master-gpt2-simpsons-fpem123.endpoint.ainize.ai/simpsons" -H "accept: application/json" -H "Content-Type: multipart/form-data" -F "name=Homer Simpson" -F "text=Hello everyonew" -F "length=100"
 
 ## * With swagger *
 
@@ -39,4 +39,4 @@ API page: [In Ainize](https://ainize.ai/fpem123/GPT2-simpsons?branch=master)
 
 ## * With a Demo *
 
-Demo page: [End-point]()
+Demo page: [End-point](https://master-gpt2-simpsons-fpem123.endpoint.ainize.ai)
