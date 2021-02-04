@@ -16,7 +16,7 @@ WORKDIR /app
 COPY . .
 
 RUN curl -c ./cookie -s -L "https://drive.google.com/uc?export=download&id=1-HyiwDHft1eSQudleWTi18myDdCPZdEB" > /dev/null
-RUN curl -Lb ./cookie "https://drive.google.com/uc?export=download&confirm=`awk '/download/ {print $NF}' ./cookie`&id=1-HyiwDHft1eSQudleWTi18myDdCPZdEB" -o GPT2-large_MyLittlePony.tar
+RUN curl -Lb ./cookie "https://drive.google.com/uc?export=download&confirm=`awk '/download/ {print $NF}' ./cookie`&id=1-HyiwDHft1eSQudleWTi18myDdCPZdEB" -o GPT2-large_simpsons.tar
 RUN ls
 RUN tar -xvf GPT2-large_simpsons.tar
 RUN rm GPT2-large_simpsons.tar
