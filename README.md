@@ -26,7 +26,11 @@ Model download: [Google drive](https://drive.google.com/file/d/1-HyiwDHft1eSQudl
 
     name: The Simpsons character name.
     text: The base of script.
-    length: The size of generated text.
+    length: The size of generated text.(min: 50)
+
+### Output foramt
+
+    {"0", [[character name, dialog], [character name, dialog], ...]}
 
 ### Image reference
 
@@ -34,7 +38,36 @@ Model download: [Google drive](https://drive.google.com/file/d/1-HyiwDHft1eSQudl
 
 ## * With CLI *
 
+### Input example
+
     curl -X POST "https://master-gpt2-simpsons-fpem123.endpoint.ainize.ai/simpsons" -H "accept: application/json" -H "Content-Type: multipart/form-data" -F "name=Homer Simpson" -F "text=Hello everyonew" -F "length=100"
+
+### Output example
+
+    {
+      "0": [
+        [
+          "Homer Simpson",
+          " Hello everyone."
+        ],
+        [
+          "Bart Simpson",
+          " Homer."
+        ],
+        [
+          "Homer Simpson",
+          " Wake up, boy."
+        ],
+        [
+          "Homer Simpson",
+          " Be honest. (POINTED) The girl's not doing it well."
+        ],
+        [
+          "Lisa Simpson",
+          " She needs to work on her game"
+        ]
+      ]
+    }
 
 ## * With swagger *
 
