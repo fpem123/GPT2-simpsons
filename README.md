@@ -30,7 +30,7 @@ Model download: [Google drive](https://drive.google.com/file/d/1-HyiwDHft1eSQudl
 
 ### Output foramt
 
-    {"0", [[character name, dialog], [character name, dialog], ...]}
+    {"0": [[character name, dialog], [character name, dialog], ...]}
 
 ### Image reference
 
