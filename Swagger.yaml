@@ -35,6 +35,12 @@ paths:
               text: Hello everyone
               length: 150
 
+          curl example
+          
+              curl -X POST "https://master-gpt2-simpsons-fpem123.endpoint.ainize.ai/simpsons" -H "accept: application/json" -H "Content-Type: multipart/form-data" -F "name=Homer Simpson" -F "text=Hello everyonew" -F "length=100"
+
+
+
         content:
           multipart/form-data:
             schema:
